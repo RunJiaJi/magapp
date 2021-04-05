@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MagAPP</title>
+	<link href="favicon.ico" rel="shortcut icon">
+	<script type="text/javascript" src="sources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="sources/js/brython.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sources/css/bootstrap.min.css">
+</head>
+
+<body onload="brython()">
+	<label for="fileUpload" class="form-label">Choose a FASTA file</label>
+	<input class="form-control" type="file" id="fileUpload">
+	<button id="submitBtn" class="btn btn-primary">Submit</button>
+
+	<hr>
+	<table id="resTable" class="table table-hover table-bordered table-striped">
+		<thead class="table-dark">
+			<th scope="col">index</th>
+			<th scope="col">tag</th>
+			<th scope="col">name</th>
+			<th scope="col">length</th>
+		</thead>
+		<tbody id="dataArea">
+		</tbody>
+	</table>
+
+	<script type="text/python">
+
+	</script>
+	<script type="text/python" src="sources/py/main.py"></script>
+</body>
+</html>
