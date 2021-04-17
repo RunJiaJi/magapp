@@ -106,6 +106,11 @@ def main(fileContent):
 	print(tag)
 	print(name)
 	print(length)
+	
+	for i in tag:
+		locus_tag = i.split('>')[1]
+		locus_tags.append(locus_tag)
+	print(locus_tags)
 
 	from browser import document, html
 	dataArea = document['dataArea']
