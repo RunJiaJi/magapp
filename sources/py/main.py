@@ -105,12 +105,7 @@ def main(fileContent):
 	length = [len(i) for j in magpro_seq for i in j ]#磁小体基因的长度
 	print(tag)
 	print(name)
-	print(length)
-	
-	for i in tag:
-		locus_tag = i.split('>')[1]
-		locus_tags.append(locus_tag)
-	print(locus_tags)
+	print(length)	
 
 	from browser import document, html
 	dataArea = document['dataArea']
